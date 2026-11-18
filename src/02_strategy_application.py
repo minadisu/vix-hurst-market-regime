@@ -18,8 +18,8 @@ import matplotlib.pyplot as plt
 # 0. 参数设置
 # ============================================================
 
-SPX_PATH = str(Path(__file__).resolve().parents[1] / "数据" / "spx.csv")
-OUTPUT_DIR = str(Path(__file__).resolve().parents[1] / "代码" / "输出结果" / "策略应用")
+SPX_PATH = str(Path(__file__).resolve().parents[1] / "data" / "spx.csv")
+OUTPUT_DIR = str(Path(__file__).resolve().parents[1] / "outputs" / "strategy")
 
 START_DATE = "2000-01-01"
 END_DATE = "2024-12-31"

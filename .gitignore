@@ -1,12 +1,14 @@
+# Python
 __pycache__/
+*.py[cod]
 .ipynb_checkpoints/
-.env
 .venv/
-*.pyc
+.env
+
+# Generated outputs and local environment
+outputs/
 .DS_Store
-# Course report with student identity should be reviewed before committing.
+Thumbs.db
+
+# Full draft thesis / confidential papers must be reviewed before committing
 *.pdf
-# Auto-generated files; existing extracted table archives are intentionally tracked.
-代码/输出结果/主实证/
-代码/输出结果/策略应用/
-代码/输出结果/黄金原油/

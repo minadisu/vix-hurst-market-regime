@@ -26,9 +26,9 @@ from scipy import stats
 # 0. 参数设置
 # ============================================================
 
-GLD_PATH = str(Path(__file__).resolve().parents[1] / "数据" / "GLD.csv")
-USO_PATH = str(Path(__file__).resolve().parents[1] / "数据" / "USO.csv")
-OUTPUT_DIR = str(Path(__file__).resolve().parents[1] / "代码" / "输出结果" / "黄金原油")
+GLD_PATH = str(Path(__file__).resolve().parents[1] / "data" / "GLD.csv")
+USO_PATH = str(Path(__file__).resolve().parents[1] / "data" / "USO.csv")
+OUTPUT_DIR = str(Path(__file__).resolve().parents[1] / "outputs" / "gold_oil")
 
 START_DATE = "2009-01-01"
 END_DATE = "2024-12-31"
