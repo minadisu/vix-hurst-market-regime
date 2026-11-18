@@ -1,0 +1,13 @@
+目标变量,目标变量含义,模型,模型含义,样本量,R²(%),调整R²(%),AIC,BIC
+spx_fwd_ret_60d,S&P 500未来60日收益率,M1_traditional,M1 传统控制变量,1734,7.99,7.51,-2820.0087,-2765.4269
+spx_fwd_ret_60d,S&P 500未来60日收益率,M2_traditional_vix,M2 传统变量+VIX状态,1734,11.73,11.01,-2881.9101,-2800.0373
+spx_fwd_ret_60d,S&P 500未来60日收益率,M3_traditional_vix_hurst,M3 加入Hurst信息,1734,18.51,17.55,-3008.3462,-2893.7242
+vix_fwd_change_60d,VIX未来60日变化率,M1_traditional,M1 传统控制变量,1734,12.05,11.59,988.8505,1043.4323
+vix_fwd_change_60d,VIX未来60日变化率,M2_traditional_vix,M2 传统变量+VIX状态,1734,25.81,25.21,703.7514,785.6242
+vix_fwd_change_60d,VIX未来60日变化率,M3_traditional_vix_hurst,M3 加入Hurst信息,1734,30.78,29.97,595.5046,710.1266
+rv_fwd_60d,未来60日实现波动率,M1_traditional,M1 传统控制变量,1734,34.64,34.3,-3211.7542,-3157.1724
+rv_fwd_60d,未来60日实现波动率,M2_traditional_vix,M2 传统变量+VIX状态,1734,38.22,37.72,-3299.5657,-3217.6929
+rv_fwd_60d,未来60日实现波动率,M3_traditional_vix_hurst,M3 加入Hurst信息,1734,44.03,43.38,-3458.7457,-3344.1237
+mdd_fwd_60d,未来60日最大回撤,M1_traditional,M1 传统控制变量,1734,5.22,4.72,-3756.8249,-3702.243
+mdd_fwd_60d,未来60日最大回撤,M2_traditional_vix,M2 传统变量+VIX状态,1734,11.29,10.57,-3861.7497,-3779.8769
+mdd_fwd_60d,未来60日最大回撤,M3_traditional_vix_hurst,M3 加入Hurst信息,1734,16.27,15.3,-3949.9185,-3835.2966
