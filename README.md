@@ -27,6 +27,9 @@ The empirical study covers **2000–2024** and considers forward 22- and 60-trad
 
 ## Repository contents
 
+**Upload status:** Research documentation and figure index are available. Binary figure images and the Excel results workbook are staged locally and still need to be uploaded to this repository.
+
+
 - `figures/`: figures from the research analysis (descriptive, regression comparison, strategy diagnostics, and cross-asset supplements).
 - `results/Paper_Tables.xlsx`: preliminary result tables.
 - `results/figure_list.csv`: figure index.
