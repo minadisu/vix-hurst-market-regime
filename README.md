@@ -27,15 +27,17 @@ The empirical study covers **2000–2024** and considers forward 22- and 60-trad
 
 ## Repository contents
 
-**Upload status:** Research documentation and figure index are available. Binary figure images and the Excel results workbook are staged locally and still need to be uploaded to this repository.
+**Upload status:** The three research scripts and the five supplied CSV datasets are uploaded. Binary figures and the Excel workbook remain pending.
 
 
-- `figures/`: figures from the research analysis (descriptive, regression comparison, strategy diagnostics, and cross-asset supplements).
-- `results/Paper_Tables.xlsx`: preliminary result tables.
-- `results/figure_list.csv`: figure index.
+- `src/`: three research scripts (main empirical analysis, strategy application, optional gold/oil extension).
+- `data/raw/`: five user-supplied CSV datasets; see `data/README.md`.
+- `results/figure_list.csv`: figure index (figure image files are not yet uploaded).
 - `docs/methodology.md`: methodological summary and validation priorities.
+- `docs/code_usage.md`: setup, run commands and known limitations.
+- `requirements.txt`: Python dependencies.
 
-**Reproduction note:** Executable research scripts and data download pipelines are **not yet included**, so this repository is currently a research-results archive rather than a fully reproducible pipeline. Add verified source code and dependency versions before describing it as reproducible.
+**Reproduction note:** Original research scripts have been uploaded with portable file paths, but the end-to-end workflow and numerical replication have **not yet been verified**. They download VIXCLS, GVZCLS and OVXCLS from FRED at runtime.
 
 ## Data provenance
 
