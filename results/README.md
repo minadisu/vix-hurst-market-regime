@@ -1,11 +1,19 @@
 # Preliminary research outputs
 
-The uploaded workbook includes seven tables (Hurst descriptive statistics, signal summary, group comparisons, full-sample OLS, bear-market OLS, significant Hurst coefficients, and strategy performance).
+This repository includes all **seven tables extracted from the uploaded workbook** as UTF-8 CSV files under `results/tables/`:
 
-The nine generated plots cover Hurst-window comparison, time-series signals, AIC comparisons, signal distributions, SPX strategy net asset values/positions/drawdowns, and gold/oil extension charts.
+- Table1: DFA-Hurst descriptive statistics
+- Table2: Core signal frequency and annual distribution
+- Table3: Group comparison tests
+- Table4: Full-sample nested OLS comparison
+- Table5: Bear-market nested OLS comparison
+- Table6: Selected significant VIX-Hurst coefficients
+- Table7: Strategy performance
 
-**Important:** Full binary `Paper_Tables.xlsx` and PNG images still need to be added via GitHub's file-upload interface. The original results are staged in a separate upload package. This directory currently contains a partial text-based summary of the outputs.
+The seven CSVs have been checked against the workbook cell values after export. The original `Paper_Tables.xlsx` workbook is **not yet uploaded**.
 
-These are exploratory in-sample results, not independently verified or peer-reviewed findings. For the 22-day and 60-day forward overlapping targets, robust inference and strictly out-of-sample tests remain priorities.
+Nine associated figures (`Figure1` to `Figure9`) are also **not yet uploaded**. See `results/figure_list.csv` for the figure inventory. A separate browser-upload package contains the nine PNGs and the original workbook.
 
-Known presentation issue in the coursework PDF: the p-value for the bear-sample, 60-day forward maximum drawdown Hurst coefficient should be `0.0291` in the source workbook, not `2.1819` as displayed in the PDF table.
+**Research qualification:** These are preliminary reported empirical results from the coursework rather than independently verified or peer-reviewed findings. Overlapping forward 22/60-day targets warrant robust inference, and strict out-of-sample tests remain to be completed.
+
+**Paper discrepancy:** The P-value for the bear-sample 60-day maximum drawdown Hurst coefficient is `0.0291` in Table6 of the source workbook; the coursework PDF accidentally prints `2.1819` in the P-value column.
