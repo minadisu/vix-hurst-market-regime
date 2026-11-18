@@ -34,8 +34,8 @@ import statsmodels.api as sm
 # 0. 参数设置
 # ============================================================
 
-SPX_PATH = str(Path(__file__).resolve().parents[1] / "data" / "raw" / "spx.csv")
-OUTPUT_DIR = str(Path(__file__).resolve().parents[1] / "outputs" / "main_empirical")
+SPX_PATH = str(Path(__file__).resolve().parents[1] / "数据" / "spx.csv")
+OUTPUT_DIR = str(Path(__file__).resolve().parents[1] / "代码" / "输出结果" / "主实证")
 
 START_DATE = "2000-01-01"
 END_DATE = "2024-12-31"

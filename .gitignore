@@ -1,16 +1,12 @@
-# Personal / course materials
-*student*id*
-*学号*
-*.pdf
-
-# Local data and runtime artifacts
 __pycache__/
 .ipynb_checkpoints/
 .env
 .venv/
 *.pyc
 .DS_Store
-raw_data/
-
-# Generated research results
-outputs/
+# Course report with student identity should be reviewed before committing.
+*.pdf
+# Auto-generated files; existing extracted table archives are intentionally tracked.
+代码/输出结果/主实证/
+代码/输出结果/策略应用/
+代码/输出结果/黄金原油/

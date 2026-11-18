@@ -1,53 +1,26 @@
-# VIX-Hurst Market Regime Identification
+# 隐含波动率信息与股票市场风险修复识别
 
-**Research status:** Preliminary empirical study; not peer reviewed. Statistical robustness and out-of-sample validation remain incomplete.
+**VIX-Hurst Market Regime Identification** · 私人研究仓库
 
-## Overview
+本仓库按原始项目的「代码 / 论文 / 数据」三部分整理，以便管理论文写作、实证程序和数据，不将辅助文档分散到多个顶层目录。
 
-This project investigates whether the persistence of changes in option-implied volatility, measured by a rolling detrended fluctuation analysis (DFA) Hurst exponent on daily log changes in the CBOE VIX, offers incremental information for identifying potential risk-recovery regimes in the S&P 500 during weak market conditions.
+## 目录
 
-The core candidate signal combines four conditions:
+- **[代码](代码/)**：三份 Python 研究脚本、原始代码说明、环境依赖及「输出结果」。输出结果目前包含论文表1—表7的 CSV 导出和图表清单。
+- **[论文](论文/)**：为原始 `main`（正文）和 `appendix`（附录）保留目录，附研究方法备注。原文件夹中的写作源文件尚未收到；`Paper_Tables.xlsx` 原件和含个人信息的完整课程报告 PDF 暂未提交仓库。
+- **[数据](数据/)**：S&P 500、GLD、USO、GVZCLS 和 OVXCLS 的 CSV 数据，保持原始字段与顺序。
 
-1. S&P 500 below its 200-day moving average;
-2. VIX above its rolling 252-trading-day 80th percentile;
-3. VIX decreased over the preceding five trading days;
-4. The 90-day DFA-Hurst estimate of changes in log(VIX) exceeds 0.5.
+## 执行
 
-The empirical study covers **2000–2024** and considers forward 22- and 60-trading-day outcomes.
+```bash
+pip install -r 代码/requirements.txt
+python 代码/01_main_spx_vix_hurst_empirical.py
+python 代码/02_strategy_application.py
+python 代码/03_gold_oil_extension_optional.py
+```
 
-## Methods and preliminary findings
+三份脚本在运行时通过 FRED 下载隐含波动率序列，包括 VIXCLS。生成的文件将保存在「代码/输出结果」中对应的子文件夹；详见「代码/运行说明.md」。
 
-- Compare traditional market covariates (M1), traditional plus VIX measures (M2), and additional VIX-Hurst measures (M3).
-- Assess forward returns, VIX changes, realized volatility, drawdowns, and risk-recovery conditions.
-- Illustrative in-sample result: for 60-day S&P 500 returns in the bear-state subsample, the reported adjusted R² increases from **11.01% (M2)** to **17.55% (M3)**.
-- Both high-and-declining and high-and-rising VIX signals with high Hurst show subsequent recovery patterns; results do **not** establish a unique directional signal.
-- Strategy and gold/oil analyses are supplementary exploratory applications, not evidence of proven trading profitability.
+**研究状态：** 表格和图形为已有的样本内结果，尚未完成全流程独立复现与样本外验证。22/60日目标变量存在重叠窗口问题，分组显著性解释需谨慎。暂不宜将成果称为经过验证的预测模型。
 
-**Limitations:** The original coursework uses overlapping forward windows and has not yet implemented the necessary robust statistical inference and out-of-sample checks. These preliminary in-sample associations should not be interpreted as causal effects or validated predictive performance.
-
-## Repository contents
-
-**Upload status:** The three research scripts and the five supplied CSV datasets are uploaded. The seven output tables are available as CSV under `results/tables/`. Binary figures and the original Excel workbook remain pending.
-
-
-- `src/`: three research scripts (main empirical analysis, strategy application, optional gold/oil extension).
-- `data/raw/`: five user-supplied CSV datasets; see `data/README.md`.
-- `results/tables/`: all seven workbook tables exported to CSV and verified against the source workbook.
-- `results/figure_list.csv`: figure index (figure image files are not yet uploaded).
-- `docs/methodology.md`: methodological summary and validation priorities.
-- `docs/code_usage.md`: setup, run commands and known limitations.
-- `requirements.txt`: Python dependencies.
-
-**Reproduction note:** Original research scripts have been uploaded with portable file paths, but the end-to-end workflow and numerical replication have **not yet been verified**. They download VIXCLS, GVZCLS and OVXCLS from FRED at runtime.
-
-## Data provenance
-
-- S&P 500 historical levels: Yahoo Finance, as described in the associated coursework.
-- VIX levels: Cboe, as described in the associated coursework.
-- Gold and oil extensions: GLD/GVZ and USO/OVX respectively.
-
-Raw market data are not redistributed here. Please consult providers' licenses and terms of use.
-
-## Publication status
-
-This repository is initially intended for **private** research organization. The full coursework PDF (which contains student information) is deliberately omitted. Before making a public version, check any target journal's preprint, code-sharing and anonymity policies and review the files for sensitive information.
+本仓库当前为 Private。若准备公开或投稿，需先核实市场数据的再分发授权、个人信息及期刊政策。
