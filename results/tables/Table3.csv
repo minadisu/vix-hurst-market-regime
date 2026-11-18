@@ -1,0 +1,19 @@
+信号变量,信号含义,目标变量,目标变量含义,控制状态,信号组均值(%),其他样本均值(%),均值差(%),信号组样本量,其他样本量,t统计量,p值
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,spx_fwd_ret_22d,S&P 500未来22日收益率,bear,2.84,-0.33,3.17,170,1564,7.0689,0
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,spx_fwd_ret_60d,S&P 500未来60日收益率,bear,5.15,-0.62,5.77,170,1564,8.3517,0
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,vix_fwd_change_22d,VIX未来22日变化率,bear,-16.96,-5.31,-11.66,170,1564,-7.0759,0
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,vix_fwd_change_60d,VIX未来60日变化率,bear,-29.05,-10.09,-18.96,170,1564,-10.2126,0
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,rv_fwd_60d,未来60日实现波动率,bear,22.11,24.25,-2.13,170,1564,-3.807,0.0002
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,mdd_fwd_22d,未来22日最大回撤,bear,-3.45,-5.06,1.61,170,1564,5.6226,0
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,mdd_fwd_60d,未来60日最大回撤,bear,-5.42,-9.03,3.6,170,1564,8.2954,0
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,recovery_loose_60d,未来60日宽口径修复概率,bear,77.65,52.05,25.6,170,1564,7.4317,0
+bear_vix_high_down_hhigh,熊市+VIX高位回落+Hurst高信号,recovery_strict_60d,未来60日严格修复概率,bear,55.29,36.38,18.91,170,1564,4.7124,0
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,spx_fwd_ret_22d,S&P 500未来22日收益率,bear,2.74,-0.44,3.18,225,1509,6.753,0
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,spx_fwd_ret_60d,S&P 500未来60日收益率,bear,5.18,-0.84,6.02,225,1509,10.7319,0
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,vix_fwd_change_22d,VIX未来22日变化率,bear,-18.89,-4.59,-14.3,225,1509,-9.0632,0
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,vix_fwd_change_60d,VIX未来60日变化率,bear,-36.86,-8.23,-28.63,225,1509,-17.8868,0
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,rv_fwd_60d,未来60日实现波动率,bear,23.46,24.12,-0.67,225,1509,-0.9491,0.3433
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,mdd_fwd_22d,未来22日最大回撤,bear,-4.63,-4.94,0.3,225,1509,0.8251,0.41
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,mdd_fwd_60d,未来60日最大回撤,bear,-6.25,-9.03,2.78,225,1509,6.3299,0
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,recovery_loose_60d,未来60日宽口径修复概率,bear,80.89,50.63,30.26,225,1509,10.3432,0
+bear_vix_high_up_hhigh,熊市+VIX高位上行+Hurst高信号,recovery_strict_60d,未来60日严格修复概率,bear,47.11,36.91,10.2,225,1509,2.8656,0.0045
