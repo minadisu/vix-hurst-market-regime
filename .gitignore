@@ -1,0 +1,13 @@
+# Personal / course materials
+*student*id*
+*学号*
+*.pdf
+
+# Local data and runtime artifacts
+__pycache__/
+.ipynb_checkpoints/
+.env
+.venv/
+*.pyc
+.DS_Store
+raw_data/
