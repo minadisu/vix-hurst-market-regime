@@ -27,11 +27,12 @@ The empirical study covers **2000–2024** and considers forward 22- and 60-trad
 
 ## Repository contents
 
-**Upload status:** The three research scripts and the five supplied CSV datasets are uploaded. Binary figures and the Excel workbook remain pending.
+**Upload status:** The three research scripts and the five supplied CSV datasets are uploaded. The seven output tables are available as CSV under `results/tables/`. Binary figures and the original Excel workbook remain pending.
 
 
 - `src/`: three research scripts (main empirical analysis, strategy application, optional gold/oil extension).
 - `data/raw/`: five user-supplied CSV datasets; see `data/README.md`.
+- `results/tables/`: all seven workbook tables exported to CSV and verified against the source workbook.
 - `results/figure_list.csv`: figure index (figure image files are not yet uploaded).
 - `docs/methodology.md`: methodological summary and validation priorities.
 - `docs/code_usage.md`: setup, run commands and known limitations.
