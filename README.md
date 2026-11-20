@@ -50,7 +50,7 @@ These are descriptive and **in-sample** results from the supplied outputs; they 
 | [`docs/research-summary.md`](docs/research-summary.md) | Bilingual standalone research brief; no thesis PDF |
 | [`docs/reproducibility.md`](docs/reproducibility.md) | Setup, data dependencies, and checks still required |
 
-## Quick start | 运行方法
+## Quick start
 
 Requires Python with internet access to retrieve `VIXCLS`, `GVZCLS`, and `OVXCLS` from FRED.
 
