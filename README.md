@@ -12,7 +12,7 @@ This project studies whether the **DFA-Hurst exponent of daily changes in log(VI
 
 - **State variables:** S&P 500 vs. 200-day moving average; VIX vs. its rolling 252-day 80th percentile; 5-day change in VIX. 
 - **Volatility persistence:** Rolling DFA-Hurst of Δlog(VIX), with 45/60/90/120-trading-day windows; 90 days is the main specification.
-- **Core composite state:** Bear market + elevated VIX + falling VIX + Hurst(90d) > 0.5. / 熊市 + VIX高位 + VIX近5日回落 + 90日Hurst大于0.5。
+- **Core composite state:** Bear market + elevated VIX + falling VIX + Hurst(90d) > 0.5. 
 - **Evaluation:** Forward 22/60-trading-day outcomes; nested models M1 (market), M2 (+ VIX), M3 (+ Hurst); supplementary allocation backtests and GLD/GVZ–USO/OVX analyses. 
 ## Selected findings (in sample) 
 | Evidence | Reported result |
